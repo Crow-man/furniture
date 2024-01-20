@@ -1,0 +1,124 @@
+:root{
+    --menu-background-color:blueviolet;
+    --menu-categoiries-background-color:aqua;
+    --border-category-color:red;
+    --menu-link-color:whitesmoke;
+}
+body{
+    margin: 0;
+}
+.menu{
+    background-color:var(--menu-background-color);
+    height: 50px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu i{
+    font-size: 40px;
+    position: relative;
+}
+.menu .menu-categories{
+    display: none;
+}
+.menu i:hover .menu-categories{
+    display: block;
+    justify-content:center ;
+    align-items: center;
+    position: absolute;
+    background-color:var(--menu-categoiries-background-color);
+    height: auto;
+    width:200px;
+}
+.menu-categories ul{
+    list-style: none;
+}
+.category{
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    padding:7px;
+    border-bottom: 1px solid var(--border-category-color);
+}
+.link{
+    font-size: 20px !important;
+    font-weight: normal !important;
+    text-decoration: none !important;
+    width: 100%;
+    color:var(--menu-link-color);
+}
+.search-box{
+    width:50%;
+    height: 50%;
+}
+
+.logo{
+    height: 100%;
+}
+
+.logo img{
+    height: 100%;
+}
+
+
+
+
+/* main*/
+
+.background{
+    height: 550px;
+}
+
+
+/* footer*/
+
+footer{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.light-night{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+}
+.night{
+    width: 80px;
+    cursor: pointer;
+    display: block;
+}
+.night i{
+    color: whitesmoke;
+    background-color: black;
+    font-size: 40px;
+    border: 1px solid red;
+    border-radius: 50%;
+    padding: 10px;
+}
+.day{
+    width: 80px;
+    cursor: pointer;
+    display: block;
+
+}
+.day i{
+    color: yellow;
+    background-color: deepskyblue;
+    font-size: 40px;
+    border: 1px solid red;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+
+.day.on{
+    display: none;
+}
+body.on{
+    background-color: black;
+    color: whitesmoke;
+}
+.night.on{
+    display: none;
+}
